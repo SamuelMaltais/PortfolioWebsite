@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+}
+.navbar{
+    font-family: monospace;
+    display: flex;
+    background-color: #282b30;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0 5rem;
+    align-items: stretch;
+}
+.logo-image{
+    margin-top: 1rem;
+}
+.title{
+    font-size: 2rem;
+    margin-left: 2rem;
+    padding: 1.1rem 0;
+}
+.contactlinks{
+    margin-left: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+}
+.navbar ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.1rem 0;
+}
+.logo{
+    display: flex;
+}
+.navbar li.active{
+    background-color: grey;
+}
+.link:hover{
+    color: white;
+    background-color: grey;
+}
+.contact li{
+    list-style: none;
+}
+.link{
+    border-radius: 45px;
+    border-color: white;
+    border-width: 0.18rem;
+    border-style: solid;
+    height: 49px;
+    line-height: 42px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: 10px;
+    color: white;
+    text-decoration: none;
+    
+}
