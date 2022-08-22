@@ -47,7 +47,7 @@ class Navbar extends Component {
             ></img>
           </a>
         </div>
-        <ul>
+        <ul className="links">
           <Link className="link" to="/">
             Home
           </Link>
