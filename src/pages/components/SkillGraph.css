@@ -6,7 +6,7 @@
   }
   .bar-group .value-label {
     text-anchor: end;
-    fill: #fff;
+    fill: black;
     font-weight: 900;
     font-size: 20px;
   }

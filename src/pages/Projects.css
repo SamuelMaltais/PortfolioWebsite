@@ -1,0 +1,57 @@
+.projects-container{
+    font-family: monospace;
+}
+.mcgill-header{
+    display: flex;
+    justify-content: center;
+    color: red;
+    margin-top: 30px;
+}
+.mcgill-header h1{
+    height: 100px;
+    line-height: 75px;
+}
+.intership-projects{
+    display: flex;
+    flex-wrap: wrap;
+}
+.project-card{
+    margin-top: 30px;
+    background: dimgrey;
+    height:400px;
+    width: 400px;
+    text-align: center;
+    border-radius: 30px;
+    box-shadow: 5px 5px;
+    margin-left: 30px;
+    transition: height 0.5s ease-out;
+    overflow: hidden;
+    /*transition: box-shadow 0.3s ease-out 100ms;*/
+}
+.project-card h2{
+    padding-top: 20px;
+}
+.project-card li{
+    width: 150px;
+}
+.project-card ul{
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 380px; 
+}
+.project-card p{
+    text-align: left;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.project-card img{
+    margin-bottom: 30px;
+}
+
+.project-card:hover{
+    height: 700px;
+    box-shadow: 10px 10px;
+}
