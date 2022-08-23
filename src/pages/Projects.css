@@ -1,5 +1,7 @@
 .projects-container{
     font-family: monospace;
+    height: 3000px;
+    max-height: fit-content;
 }
 .mcgill-header{
     display: flex;
@@ -15,6 +17,7 @@
 .intership-projects{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 .hackathon{
     color: rgb(135, 127, 182);
@@ -59,6 +62,7 @@
     text-align: left;
     margin-right: 20px;
     margin-left: 20px;
+    margin-bottom: 2px;
 }
 .project-card img{
     margin-bottom: 30px;

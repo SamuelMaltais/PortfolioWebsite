@@ -23,7 +23,9 @@ const McGillComponent = () => {
               <li>Arduino & C</li>
             </ul>
             <h3>Role description</h3>
-            <p>Tested and revived old equipement in order for students to prove the theoratical relationship between temperature and magnetic propreties of metals</p>
+            <p>I tested and revived old equipement in order for students to prove the theoratical relationship between temperature and magnetic propreties of metals. I was tasked to use arduino to read
+                and interpret analog data from the many sensors with the maximum 10 bit resolution.
+            </p>
           </div>
           <div className="project-card">
             <h2>Alpha anywhere database</h2>
@@ -39,6 +41,7 @@ const McGillComponent = () => {
             <p>My role was to migrate the database from static DBF files to a MySQL server hosted on Azure. I was also tasked to update the security system to allow user to login
               with their McGill credentials from the Active Directory.
             </p>
+            <a href="https://sky2.campus.mcgill.ca/tabbedui_Main_Page.a5w" target="_blank"><button className="nice-button">View live version</button></a>
           </div>
           <div className="project-card">
             <h2>Webapp to control lobby tv</h2>

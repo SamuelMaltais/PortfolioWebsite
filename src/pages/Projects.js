@@ -7,7 +7,7 @@ class Projects extends Component {
   render() {
     return (
       <div className="projects-container">
-        <McGillComponent />
+        <McGillComponent />        
         <Hackathons />
       </div>
     )
