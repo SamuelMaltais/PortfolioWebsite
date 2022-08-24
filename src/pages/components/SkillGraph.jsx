@@ -1,6 +1,6 @@
 import { Component } from "react"
 import "./SkillGraph.css"
-import { VictoryBar } from 'victory';
+// import { VictoryBar } from 'victory';
 
 class SkillGraph extends Component {
     state = {
@@ -10,7 +10,8 @@ class SkillGraph extends Component {
     
     return(
     <div>  
-      <VictoryBar />
+      {/* <VictoryBar /> */}
+      <h1></h1>
     </div>
   )}
 }
