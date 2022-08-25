@@ -1,8 +1,7 @@
 import { Component } from "react";
 import "./Home.css";
-import SkillGraph from "./components/SkillGraph"
+import SkillGraph from "./components/SkillGraph";
 class Home extends Component {
-  state = {};
   render() {
     return (
       <div>

@@ -34,7 +34,8 @@
     text-align: center;
     border-radius: 30px;
     box-shadow: 5px 5px;
-    margin-left: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
     transition: height 0.5s ease-out;
     overflow: hidden;
     /*transition: box-shadow 0.3s ease-out 100ms;*/
@@ -67,9 +68,11 @@
 }
 .project-card img{
     margin-bottom: 30px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: black;
 }
 
 .project-card:hover{
     height: 750px;
-    box-shadow: 10px 10px;
 }

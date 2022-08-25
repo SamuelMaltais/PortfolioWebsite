@@ -5,7 +5,16 @@ class Contact extends Component {
   render() {
     return (
       <div className="contact-container">
-        <h1>Contact</h1>
+        <div className="contact-form">
+          <h1>Contact me!</h1>
+          <h3>Name</h3>
+          <input />
+          <h3>Email</h3>
+          <input />
+          <h3>Message</h3>
+          <input className="message-input" />
+          <button className="nice-button">Submit</button>
+        </div>
       </div>
     );
   }
