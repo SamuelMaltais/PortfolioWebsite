@@ -11,6 +11,7 @@ class Navbar extends Component {
   render() {
     return (
       <div className="navbar">
+        <input type = "checkbox" className="hamburger"></input>
         <div className="logo">
           <p className="title">Samuel Maltais</p>
           <img
