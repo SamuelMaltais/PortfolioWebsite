@@ -1,4 +1,4 @@
-import React, { Children, Component } from "react";
+import React, {Component } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import logoImage from "./Images/dog.jpg";
@@ -11,8 +11,8 @@ class Navbar extends Component {
   render() {
     return (
       <div className="navbar">
-        <input type = "checkbox" className="hamburger"></input>
         <div className="logo">
+        
           <p className="title">Samuel Maltais</p>
           <img
             className="logo-image"
@@ -48,6 +48,8 @@ class Navbar extends Component {
             ></img>
           </a>
         </div>
+        <input type="checkbox" class="menu-trigger" id="menu-trigger1"/>
+        <label for="menu-trigger1" class="hamburger-menu menuBtn1" role="button"></label>
         <ul className="links">
           <Link className="link" to="/">
             Home

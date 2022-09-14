@@ -14,7 +14,7 @@ const Hackathons = () =>{
         <p>The projects here are the beginning of my coding journey and are here just to show you the growth I've experienced as a developper</p>
         <div className="intership-projects">
         <div className="project-card">
-        <h2>Foodbank database with Google cloud services</h2>
+        <h2>Foodbank database</h2>
             <img src={Maps} height={280} width={350} alt="" />
             <h3>Skills used</h3>
             <ul>
@@ -33,7 +33,7 @@ const Hackathons = () =>{
             </div>
             </div>
             <div className="project-card">
-        <h2>Messenger chatbot for volonteer recruiting</h2>
+        <h2>Messenger chatbot</h2>
             <img src={Messenger} height={280} width={350} alt="" />
             <h3>Skills used</h3>
             <ul>
@@ -52,7 +52,7 @@ const Hackathons = () =>{
             </div>
             </div>
             <div className="project-card">
-        <h2>Different mask simulation & coughing</h2>
+        <h2>Different mask simulation</h2>
             <img src={Mask} height={280} width={350} alt="" />
             <h3>Skills used</h3>
             <ul>

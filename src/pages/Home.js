@@ -1,12 +1,18 @@
 import { Component } from "react";
 import "./Home.css";
-import SkillGraph from "./components/SkillGraph";
+import Side_hand from "./components/Images/side_hand.png"
+
 class Home extends Component {
   render() {
     return (
-      <div>
+      <div className="home-container">
         <h1 className="home-title">Welcome to my portfolio website !</h1>
-        <SkillGraph />
+        <div className="skill-container">
+        <input type="checkbox" class="hand-checkbox" id="menu-trigger2"/>
+        <label for="menu-trigger2" class="hand-checkbox-trigger" role="button"></label>
+        <img src={Side_hand} className="left-hand"></img>
+        <img src={Side_hand} className="right-hand"></img>
+        </div>
       </div>
     );
   }

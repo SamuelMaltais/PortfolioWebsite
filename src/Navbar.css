@@ -2,9 +2,10 @@
     box-sizing: border-box;
 }
 .navbar{
-    font-family: monospace;
+    font-family: Arial, Helvetica, sans-serif;
     display: flex;
-    background-color: #282b30;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
     justify-content: space-between;
     padding: 0 5rem;
 }
@@ -34,7 +35,7 @@
 }
 .link:hover{
     color: white;
-    background-color: grey;
+    background-color: rgba(9,9,121,1);
 }
 .contact li{
     list-style: none;
@@ -46,7 +47,6 @@
 }
 .link{
     border-radius: 45px;
-    
     border-color: white;
     border-width: 0.18rem;
     border-style: none;
@@ -58,24 +58,164 @@
     color: white;
     text-decoration: none;
 }
-.hamburger{
+.hamburger-menu{
     position: absolute;
-    top: 100%;
-    bottom: 100%;
+    top: 9px;
+    right: 10px;
+    height: 0;
+    width: 0;
+}
+.menu-trigger{
+    position: absolute;
+    top: 9px;
+    right: 10px;
     height: 0;
     width: 0;
 }
 @media screen and (max-width: 800px) {
-    .navbar{  
-        height: 100px;
-    }
-    .hamburger{
-        height: 50px;
+    :root {
+        --a1: 0deg;
+        --a3: 0deg;
+        --c1: black;
+        --c2: black;
+        --c3: black;
+        --p10: 10%;
+        --p11: 20%;
+        --p30: 70%;
+        --p31: 80%;
+        --p4: 0%;
+       }
+       .menu-trigger {
+        opacity: 0;
+       }
+       .hamburger-menu {
+        cursor: pointer;
         width: 50px;
+        height: 50px;
+        margin-right: 10px;
+        background: linear-gradient(var(--a1),
+         transparent var(--p10),
+         var(--c1) var(--p10),
+         var(--c1) var(--p11),
+         transparent var(--p11)
+        ),
+         linear-gradient(0deg,
+         transparent 40%,
+         var(--c2) 40%,
+         var(--c2) 50%,
+         transparent 50%
+        ),
+         linear-gradient(var(--a3),
+         transparent var(--p30),
+         var(--c3) var(--p30),
+         var(--c3) var(--p31),
+         transparent var(--p31)
+        );
+         animation: close 0.2s ease forwards;
+       }
+       .menu-trigger:focus + .hamburger-menu {
+         transform: scale(1.2);
+       }
+       
+       @keyframes close {
+        0% {
+         --a1: 45deg;
+         --a3: -45deg;
+         --p10: 20%;
+         --p11: 26%;
+         --p30: 69%;
+         --p31: 75%;
+         --c1: transparent;
+        }
+        30% {
+         --a1: 30deg;
+         --a2: -30deg;
+         --p10: 15%;
+         --p11: 20%;
+         --p30: 70%;
+         --p31: 75%;
+         --c2: rgba(0,0,0,0.4);
+        }
+        60% {
+         --a1: 20deg;
+         --a2: -20deg;
+         --p10: 12%;
+         --p11: 28%;
+         --p30: 70%;
+         --p31: 75%;
+         --c2: rgba(0,0,0,0.7);
+        }
+        100% {
+        --a1: 0deg;
+        --a3: 0deg;
+        --c1: black;
+        --p10: 10%;
+        --p11: 20%;
+        --p30: 70%;
+        --p31: 80%;
+        }
+       }
+       .menu-trigger:checked + .menuBtn1 {
+         animation: open 0.2s ease forwards;
+       }
+       @keyframes open {
+        10% {
+         --a1: 10deg;
+         --a2: -10deg;
+         --c2: rgba(0,0,0,0.9);
+        }
+        30% {
+         --a1: 20deg;
+         --a2: -20deg;
+         --p10: 15%;
+         --p11: 25%;
+         --p30: 15%;
+         --p31: 25%;
+         --c2: rgba(0,0,0,0.7);
+        }
+        60% {
+         --a1: 30deg;
+         --a2: -30deg;
+         --p10: 35%;
+         --p11: 45%;
+         --p30: 35%;
+         --p31: 45%;
+         --c2: rgba(0,0,0,0.4);
+        }
+        100% {
+         --a1: 45deg;
+         --a3: -45deg;
+         --p10: 45%;
+         --p11: 55%;
+         --p30: 45%;
+         --p31: 55%;
+         --c2: transparent;
+        }
+       }
+       
+    .navbar{  
+        padding-left: 1rem;
+        padding-right: 5rem;
     }
-    .navbar hamburger:checked{
-        height: 100%;
+    .logo{
+        flex-wrap: wrap;
     }
+    .links{
+        position: absolute;
+        flex-direction: column;
+        width: 100%;
+        left: 0%;
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+        text-align: center;
+        font-size: x-large;
+        top: -400%;
+        z-index: 2;
+        transition: top 0.3s ease-in;
+    }
+    .menu-trigger:checked + .menuBtn1 + .links{
+        top: 64px;
+      }
+    
     .title{
         font-size: 1.5rem;
     }

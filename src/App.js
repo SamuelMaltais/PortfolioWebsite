@@ -9,19 +9,19 @@ import "./App.css";
 
 class App extends Component {
   state = {};
-
+  componentDidMount(){
+    document.title = "Samuel Maltais"
+  }
   render() {
     return (
       <div>
         <Navbar />
-        <div className="container">
           <Routes>
             <Route path="/" element={<Home />}></Route>
             <Route path="/aboutMe" element={<AboutMe />}></Route>
             <Route path="/projectsAndInterships" element={<Projects />}></Route>
             <Route path="/contact" element={<Contact />}></Route>
           </Routes>
-        </div>
       </div>
     );
   }
