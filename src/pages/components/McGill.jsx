@@ -38,8 +38,8 @@ const McGillComponent = () => {
               <li>Alpha software</li>
             </ul>
             <h3>Role description</h3>
-            <p>My role was to migrate the database from static DBF files to a MySQL server hosted on Azure. I was also tasked to update the security system to allow user to login
-              with their McGill credentials from the Active Directory.
+            <p>My role was to migrate the database from static DBF files to a MySQL server hosted on Azure. I was also tasked to update the security system to allow user to login  
+            with their McGill credentials from the Active Directory.
             </p>
             <a href="https://sky2.campus.mcgill.ca/tabbedui_Main_Page.a5w" target="_blank"><button className="nice-button">View live version</button></a>
           </div>

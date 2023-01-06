@@ -5,6 +5,9 @@ p {
     font-family: Helvetica, Arial, sans-serif;
     height: 3000px;
     max-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .mcgill-header{
     display: flex;
@@ -12,10 +15,14 @@ p {
     color: red;
     text-shadow: 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000;
     margin-top: 30px;
+    background-color: rgb(63, 66, 87, 0.3);
+    width: fit-content;
+    border-radius: 10px;
+    align-items: center;
 }
 .mcgill-header h1{
     height: 100px;
-    line-height: 75px;
+    line-height: 90px;
     font-weight: bolder;
 }
 .intership-projects{
@@ -31,7 +38,7 @@ p {
 }
 .project-card{
     margin-top: 30px;
-    background: rgb(40, 40, 133);
+    background: rgb(38, 64, 109);
     height:370px;
     width: 400px;
     text-align: center;

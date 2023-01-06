@@ -209,7 +209,7 @@
         text-align: center;
         font-size: x-large;
         top: -400%;
-        z-index: 2;
+        z-index: 3;
         transition: top 0.3s ease-in;
     }
     .menu-trigger:checked + .menuBtn1 + .links{

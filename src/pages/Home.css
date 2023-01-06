@@ -21,23 +21,26 @@
     left:50%
 }
 .hand-checkbox{
-    cursor: grab;
     position: absolute;
+    z-index: 2;
     top: inherit + 30px;
     height: 50px;
     width: 50px;
     left:50%
 }
 .left-hand{
+    rotate: 110deg;
     position: absolute;
     top: inherit + 30px;
     left: 45%;
 }
 .right-hand{
+    rotate: -110deg;
     position: absolute;
     top:inherit + 30px;
     left: 55%
 }
-/* .menu-trigger:checked + .menuBtn1 + .links{
-    top: 64px;
-  } */
+.hand-checkbox-trigger:checked + .menuBtn1 + .left-hand{
+    rotate: 0deg;
+    left: 10%
+  }

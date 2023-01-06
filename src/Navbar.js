@@ -58,7 +58,7 @@ class Navbar extends Component {
             Projects and interships
           </Link>
           <Link className="link" to="/aboutMe">
-            About-me
+            About me
           </Link>
           <Link className="link" to="/contact">
             Contact

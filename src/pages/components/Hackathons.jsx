@@ -7,9 +7,9 @@ const Hackathons = () =>{
     return(
         <>
         <div className ="mcgill-header">
-          <img src={Coding} height={100} width={100} alt="" />
+          <img src={Coding} height={100} width={100} alt="" style={{marginLeft: "30px"}}/>
           <h1 className= "hackathon">Hackathon projects</h1>
-          <img src={Coding} height={100} width={100} alt="" />
+          <img src={Coding} height={100} width={100} alt="" style={{marginRight: "30px"}}/>
         </div>
         <p>The projects here are the beginning of my coding journey and are here just to show you the growth I've experienced as a developper</p>
         <div className="intership-projects">
